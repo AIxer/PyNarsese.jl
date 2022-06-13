@@ -1,2 +1,6 @@
+name = "PyNarsese"
+uuid = "78c29a4d-a199-5336-b888-9f3b2cc58deb"
+version = "0.1.0"
+
 [deps]
 MLStyle = "d8e11817-5142-5d16-987a-aa16d5891078"
