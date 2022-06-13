@@ -1,4 +1,8 @@
-
+mutable struct Budget
+    priority::Float16
+    durability::Float16
+    quality::Float16
+end
 Budget() = Budget(0.9, 0.9, 0.5)
 
 total(bgt) = bgt.durability * (bgt.priority + bgt.quality) / 2.0
