@@ -21,7 +21,8 @@ is_commutative(c::Copula) = @match c begin
     _ => false
 end
 
-is_higher_order(c::Copula) = c isa HighOrder ? true : false
+is_higher_order(c::Copula) = false
+is_higher_order(c::HighOrder) = true
 
 symmetrize(c::Copula) = @match c begin
     Inheritance => Similarity
